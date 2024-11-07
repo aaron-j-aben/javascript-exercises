@@ -5,6 +5,9 @@ const convertToCelsius = function(tempF) {
 };
 
 const convertToFahrenheit = function(tempC) {
+  const tempInFahrenheit = (tempC + 32) * 1.8;
+
+  return Number(tempInFahrenheit.toFixed(1));
 };
 
 // Do not edit below this line
