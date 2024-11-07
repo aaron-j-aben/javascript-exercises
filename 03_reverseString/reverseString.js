@@ -3,7 +3,9 @@ const reverseString = function(string) {
     const halfLen = Math.floor(string.length / 2);
     
     for (let i = 0; i < halfLen; i++) {
-        [strArr[i], strArr.at(-i - 1)] = [strArr.at(-i - 1), [strArr[i]]]
+        temp = strArr.at(-i - 1);
+        strArr.at(-i - 1) = strArr.at(i);
+        strArr.at(i) = temp;
     }
 
     return strArr.join('');
