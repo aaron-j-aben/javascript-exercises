@@ -4,8 +4,8 @@ const reverseString = function(string) {
     
     for (let i = 0; i < halfLen; i++) {
         temp = strArr.at(-i - 1);
-        strArr.at(-i - 1) = strArr.at(i);
-        strArr.at(i) = temp;
+        strArr[string.length - i - 1] = strArr.at(i);
+        strArr[i] = temp;
     }
 
     return strArr.join('');
