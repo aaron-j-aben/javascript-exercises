@@ -3,6 +3,10 @@ const sumAll = function(n, m) {
         return 'ERROR';
     }
 
+    if (n < 0 || m < 0) {
+        return 'ERROR';
+    }
+
     let start, end, sum = 0;
     if (n < m) {
         start = n;
